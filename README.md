@@ -116,3 +116,11 @@ Python, NumPy, Pandas, Librosa, Scikit-learn, TensorFlow/Keras, Matplotlib, Seab
 ## Not
 
 Bu proje akademik çalışma ve uygulamalı makine öğrenmesi geliştirme amacıyla hazırlanmıştır. Model sonuçları kullanılan veri setlerine, eğitim koşullarına ve ses kayıtlarının özelliklerine göre değişebilir.
+
+## Uygulama Arayüzü
+
+### Ana Ekran
+![Uygulama Arayüzü](screenshots/arayuz.png)
+
+### Ses Duygu Analizi
+![Duygu Tahmini](screenshots/duygu_tahmini.png)

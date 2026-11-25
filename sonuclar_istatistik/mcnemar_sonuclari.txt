@@ -1,0 +1,18 @@
+McNemar Testi (YSA vs Random Forest)
+B (RF doğru / YSA yanlış): 544
+C (YSA doğru / RF yanlış): 295
+Chi2: 73.3063
+Yorum: İstatistiksel olarak ANLAMLI fark vardır.
+
+
+
+
+
+
+
+
+
+
+
+
+

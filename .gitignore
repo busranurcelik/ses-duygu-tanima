@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+temp_mic.wav
+*.log
+
+# Raw datasets
+data/
+
+# Large generated dataset
+final_oznitelik_seti.csv
+ham_veri_listesi.csv
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

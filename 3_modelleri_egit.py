@@ -8,6 +8,7 @@ import time
 # Sklearn
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.pipeline import make_pipeline
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, precision_score, recall_score
 
 # Modeller
@@ -39,9 +40,6 @@ lb = LabelEncoder()
 y = lb.fit_transform(y)
 print(f"Sınıflar: {lb.classes_}")
 
-# Ölçekleme
-scaler = StandardScaler()
-X = scaler.fit_transform(X)
 
 # Stratified split (ÇOK ÖNEMLİ)
 X_train, X_test, y_train, y_test = train_test_split(
@@ -55,50 +53,60 @@ X_train, X_test, y_train, y_test = train_test_split(
 # =========================
 # MODELLER
 # =========================
+
 classifiers = {
     "1-Decision Tree": DecisionTreeClassifier(
         random_state=42,
         class_weight="balanced"
     ),
 
-    "2-SVM": SVC(
-        kernel='rbf',
-        probability=True,
-        class_weight='balanced',
-        random_state=42
+    "2-SVM": make_pipeline(
+        StandardScaler(),
+        SVC(
+            kernel="rbf",
+            probability=True,
+            class_weight="balanced",
+            random_state=42
+        )
     ),
 
-    "3-KNN": KNeighborsClassifier(
-        n_neighbors=5,
-        weights='distance'
+    "3-KNN": make_pipeline(
+        StandardScaler(),
+        KNeighborsClassifier(
+            n_neighbors=5,
+            weights="distance"
+        )
     ),
 
-    "4-Logistic Regression": LogisticRegression(
-    max_iter=1500,
-    solver="lbfgs",
-    random_state=42
+    "4-Logistic Regression": make_pipeline(
+        StandardScaler(),
+        LogisticRegression(
+            max_iter=1500,
+            solver="lbfgs",
+            random_state=42
+        )
     ),
-
 
     "5-Random Forest": RandomForestClassifier(
         n_estimators=200,
-        class_weight='balanced',
+        class_weight="balanced",
         random_state=42,
         n_jobs=-1
     )
 }
 
 ensembles = {
-    "Ensemble-Gradient Boosting": GradientBoostingClassifier(random_state=42)
+    "Ensemble-Gradient Boosting":
+        GradientBoostingClassifier(random_state=42)
 }
 
 voting_clf = VotingClassifier(
     estimators=[
-        ('svm', classifiers["2-SVM"]),
-        ('rf', classifiers["5-Random Forest"]),
-        ('lr', classifiers["4-Logistic Regression"])
+        ("svm", classifiers["2-SVM"]),
+        ("rf", classifiers["5-Random Forest"]),
+        ("lr", classifiers["4-Logistic Regression"])
     ],
-    voting='soft'
+    voting="soft"
 )
 
 ensembles["Ensemble-Voting Classifier"] = voting_clf

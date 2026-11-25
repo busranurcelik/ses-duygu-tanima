@@ -3,6 +3,7 @@ import numpy as np
 import os
 
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import StratifiedKFold, cross_val_score
 
 # =========================
@@ -35,26 +36,33 @@ y = df.iloc[:, -1].values
 le = LabelEncoder()
 y = le.fit_transform(y)
 
-# Ölçekleme
-scaler = StandardScaler()
-X = scaler.fit_transform(X)
 
 # =========================
 # 5 KLASİK MODEL
 # =========================
 classifiers = {
     "Decision Tree": DecisionTreeClassifier(random_state=RANDOM_STATE),
-    "SVM": SVC(kernel="rbf", random_state=RANDOM_STATE),
-    "KNN": KNeighborsClassifier(n_neighbors=5),
-    "Logistic Regression": LogisticRegression(max_iter=1000, random_state=RANDOM_STATE),
+
+    "SVM": make_pipeline(
+        StandardScaler(),
+        SVC(kernel="rbf", random_state=RANDOM_STATE)
+    ),
+
+    "KNN": make_pipeline(
+        StandardScaler(),
+        KNeighborsClassifier(n_neighbors=5)
+    ),
+
+    "Logistic Regression": make_pipeline(
+        StandardScaler(),
+        LogisticRegression(max_iter=1000, random_state=RANDOM_STATE)
+    ),
+
     "Random Forest": RandomForestClassifier(
         n_estimators=200,
         random_state=RANDOM_STATE
     ),
 
-    # =========================
-    # 2 ENSEMBLE
-    # =========================
     "Gradient Boosting": GradientBoostingClassifier(
         random_state=RANDOM_STATE
     ),

@@ -16,7 +16,7 @@ from scipy.io.wavfile import write
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 RESULT_DIR = os.path.join(BASE_DIR, "sonuclar_ysa")
 
-MODEL_PATH  = os.path.join(RESULT_DIR, "ysa_final_model.keras")
+MODEL_PATH = os.path.join(RESULT_DIR, "best_model.keras")
 SCALER_PATH = os.path.join(RESULT_DIR, "scaler.pkl")
 LABELS_PATH = os.path.join(RESULT_DIR, "label_map.json")
 

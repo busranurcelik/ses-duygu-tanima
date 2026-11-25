@@ -1,18 +1,10 @@
 McNemar Testi (YSA vs Random Forest)
-B (RF doğru / YSA yanlış): 544
-C (YSA doğru / RF yanlış): 295
-Chi2: 73.3063
-Yorum: İstatistiksel olarak ANLAMLI fark vardır.
-
-
-
-
-
-
-
-
-
-
-
-
-
+Test örneği sayısı: 4632
+YSA Accuracy: 0.8100
+RF Accuracy: 0.8491
+İki model de doğru: 3509
+B (RF doğru / YSA yanlış): 424
+C (YSA doğru / RF yanlış): 243
+İki model de yanlış: 456
+p-değeri: 0.000000
+Yorum: İki model arasında istatistiksel olarak anlamlı fark vardır.

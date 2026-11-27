@@ -1,0 +1,15 @@
+kontrol,sonuc
+meta_source_id_birebir,True
+meta_group_id_birebir,True
+meta_source_birebir,True
+meta_label_birebir,True
+meta_aug_id_birebir,True
+meta_split_80_20_birebir,True
+meta_split_70_15_15_birebir,True
+meta_fold_birebir,True
+meta_labels_birebir,True
+meta_sha256_birebir,True
+ilk_184_max_abs_diff,0.0
+ilk_184_allclose_atol_1e-10,True
+f0_8_kolon_finite,True
+f0_8_kolon_sabit_olmayan,8

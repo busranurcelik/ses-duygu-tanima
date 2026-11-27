@@ -1,0 +1,9 @@
+kolon,ozellik,birim,tanim,fallback
+184,f0_mean,Hz,Gecerli voiced karelerin F0 ortalamasi,Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+185,f0_median,Hz,Gecerli voiced karelerin F0 medyani,Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+186,f0_std,Hz (ddof=0),Gecerli voiced karelerin F0 std (ddof=0),Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+187,f0_min,Hz,Gecerli voiced karelerin minimum F0,Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+188,f0_max,Hz,Gecerli voiced karelerin maksimum F0,Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+189,f0_range,Hz,maksimum - minimum F0,Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+190,f0_slope,Hz/s (gercek zaman),"np.polyfit(zaman[voiced], F0[voiced], 1) egitimi; zaman=i*512/22050 s",Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir
+191,voiced_frame_ratio,oran,"n_voiced_valid / 108 (2,5 s pencerenin toplam pYIN kare sayisi)",Yetersiz voiced (<3) veya hata: ilk 7 alan 0.0; voiced_ratio gercek paydadan uretilir

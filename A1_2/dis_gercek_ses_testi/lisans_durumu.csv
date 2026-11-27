@@ -1,0 +1,6 @@
+kaynak,durum,kapsam,kanit,not
+CREMA-D,DOGRULANDI,Veritabani ODbL 1.0; bireysel icerikler DbCL 1.0,https://github.com/CheyneyComputerScience/CREMA-D/blob/master/LICENSE.txt,GitHub README ve LICENSE.txt metni ayni kosullari belirtiyor.
+RAVDESS,DOGRULANDI,CC BY-NC-SA 4.0,https://zenodo.org/records/1188976,Zenodo kayit 1188976 metadata license alanindan okundu; ticari olmayan ve paylas-a-like kosulu var.
+SAVEE,DOGRULANAMADI,Belirtilmedi,-,Yerelde lisans/riza belgesi yok; kurumsal kaynak adresleri 404 donuyor. Ucuncu taraf repolar hak kaynagi sayilmadi.
+TESS,DOGRULANDI,CC BY-NC 4.0,https://doi.org/10.5683/SP2/E8H2MF,U of T Borealis dataset metadata license alanindan okundu; mevcut 70/15/15 test bolumunun kaynagidir.
+BNC,HARIC,Riza belgelenmedi,-,"100 kayit tek konusmaciya ait (BNC_SPEAKER_01); degerlendirmeye alinmaz, sadece raporlanir."

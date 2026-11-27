@@ -1,0 +1,64 @@
+{
+  "evaluation": "A1_2_10fold_group_aware_OOF_RF_MLP",
+  "experiment": "A1.2: A0 184 ozellik + 8 F0/pitch ozellik",
+  "n_features": 192,
+  "n_a0_features": 184,
+  "n_f0_features": 8,
+  "manifest": "manifest_v2_dedup_draft.csv",
+  "feature_file": "A1_2\\final_oznitelik_seti_A1_2.csv",
+  "detail_file": "A1_2\\f0_istatistikleri.csv",
+  "a0_oof_reference": "sonuclar_v2_dedup\\kfold\\oof_tahminler.csv",
+  "feature_sha256": "68abbdcf2fa78c3b1019603798fbb7b01f3eca8ca41650d21fb217724d51bd65",
+  "fold_source": "manifest_v2_dedup_draft.csv (REVIEW_LABEL excluded)",
+  "seed_base": 42,
+  "fold_seeds": {
+    "1": 43,
+    "2": 44,
+    "3": 45,
+    "4": 46,
+    "5": 47,
+    "6": 48,
+    "7": 49,
+    "8": 50,
+    "9": 51,
+    "10": 52
+  },
+  "rf": {
+    "n_estimators": 200,
+    "class_weight": "balanced"
+  },
+  "mlp": {
+    "epochs": 25,
+    "batch_size": 32,
+    "early_stopping": false,
+    "class_weight": "balanced + happy*1.25 + sad*1.15",
+    "architecture": "256-128-64-4, BN + Dropout"
+  },
+  "augmentation": "yalnizca fold train kayitlarinin mevcut deterministic aug satirlari",
+  "scaler": "her fold'da yalnizca o fold train'ine fit; RF ve MLP'ye uygulandi",
+  "f0_imputation": {
+    "columns": [
+      "184",
+      "185",
+      "186",
+      "187",
+      "188",
+      "189",
+      "190"
+    ],
+    "sentinel": 0.0,
+    "method": "fold train fallback'siz satirlarin median'i",
+    "learned_from": "train only (her fold ayri)",
+    "not_imputed": {
+      "191": "voiced_frame_ratio gercek 0 degeridir"
+    },
+    "log": "f0_imputasyon_degerleri.csv"
+  },
+  "models_saved": false,
+  "not_run": [
+    "McNemar",
+    "ROC/AUC",
+    "70_15_15",
+    "commit/push"
+  ]
+}

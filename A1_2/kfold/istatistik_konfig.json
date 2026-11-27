@@ -1,0 +1,63 @@
+{
+  "analysis": "A0_vs_A1_2_OOF_statistical_comparison",
+  "data": {
+    "A0_oof": "sonuclar_v2_dedup\\kfold\\oof_tahminler.csv",
+    "A1_2_oof": "A1_2\\kfold\\oof_tahminler.csv",
+    "A1_2_metrics_reference": "A1_2\\kfold\\oof_metrikler.csv",
+    "A0_sha256": "385d795af8ccce7e02a1d9dc94e9f844f883e06e923c6a2af8376bfe12f243d5",
+    "A1_2_sha256": "2e672a7d6d71f49748c51e73a1e6aaba4191574d5998bb7de5e141c95c13b73c",
+    "n_paired": 7780
+  },
+  "matching": {
+    "keys": [
+      "source_id",
+      "y_true"
+    ],
+    "verified_equal": [
+      "group_id",
+      "source",
+      "fold"
+    ]
+  },
+  "bootstrap": {
+    "type": "paired cluster bootstrap, stratified by source",
+    "cluster": "group_id",
+    "strata": "source",
+    "n_repeats": 10000,
+    "seed": 42,
+    "ci": "percentile 95% (2.5, 97.5)",
+    "draw": "her source icin ayni sayida grup, with replacement; ayni satirlar iki modelde",
+    "groups_by_source": {
+      "BNC": 1,
+      "CREMA": 91,
+      "RAVDESS": 24,
+      "SAVEE": 4,
+      "TESS": 2
+    },
+    "records_by_source": {
+      "BNC": 100,
+      "CREMA": 5081,
+      "RAVDESS": 759,
+      "SAVEE": 240,
+      "TESS": 1600
+    }
+  },
+  "mcnemar": "exact binomial two-sided, auxiliary only (group dependence ignored)",
+  "models": [
+    "RF",
+    "MLP"
+  ],
+  "classes": [
+    "angry",
+    "fear",
+    "happy",
+    "sad"
+  ],
+  "not_run": [
+    "training",
+    "CV",
+    "70_15_15",
+    "model_save",
+    "commit/push"
+  ]
+}

@@ -1,0 +1,8 @@
+eval,split,feature_rows
+80_20,train,18513
+80_20,EXCLUDED,3146
+80_20,test,1609
+70_15_15,train,17536
+70_15_15,EXCLUDED,3664
+70_15_15,val,1268
+70_15_15,test,800

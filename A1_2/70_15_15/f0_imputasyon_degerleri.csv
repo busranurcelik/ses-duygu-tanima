@@ -1,0 +1,8 @@
+kolon,ozellik,train_medyan,n_train_fallbacksiz,n_train_impute,n_val_impute,n_test_impute,kaynak
+184,f0_mean,223.56790353802924,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+185,f0_median,220.0809703691211,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+186,f0_std,25.407571214509264,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+187,f0_min,177.7317062743877,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+188,f0_max,282.1314975080661,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+189,f0_range,93.3267046051574,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari
+190,f0_slope,-18.24732738248027,16342,1194,147,0,yalnizca 70/15/15 train fallback'siz satirlari

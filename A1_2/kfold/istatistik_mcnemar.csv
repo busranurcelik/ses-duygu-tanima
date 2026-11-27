@@ -1,0 +1,3 @@
+model,A0_dogru_A12_yanlis_n01,A0_yanlis_A12_dogru_n10,uyusmayan_toplam,exact_binomial_p,not
+RF,384,476,860,0.0018984250589687748,yardimci analiz; grup bagimliligini modellemez
+MLP,474,594,1068,0.00026755850972770394,yardimci analiz; grup bagimliligini modellemez

@@ -1,0 +1,28 @@
+# A1.2 10-fold sonrasi dogrulama
+
+- Kontrol: **20**, PASS: **20**, FAIL: **0**
+
+| kontrol | durum | detay |
+|---|---|---|
+| tum_cikti_dosyalari | PASS | eksik=[] |
+| oof_satir_sayisi | PASS | 7780 |
+| oof_source_tekillik | PASS | 7780 tekil |
+| oof_fold_manifest | PASS | birebir |
+| A0_kumesi_ayni | PASS | A0=7780, A1_2=7780 |
+| per_fold_20_satir | PASS | 20 |
+| seed_43_52 | PASS | [43, 44, 45, 46, 47, 48, 49, 50, 51, 52] |
+| her_model_10_fold | PASS | {'MLP': 10, 'RF': 10} |
+| oof_metrikler.csv_satir | PASS | 2 / 2 |
+| oof_kaynak_bazli.csv_satir | PASS | 10 / 10 |
+| oof_sinif_f1.csv_satir | PASS | 8 / 8 |
+| oof_karisiklik.csv_satir | PASS | 32 / 32 |
+| f0_imputasyon_degerleri.csv_satir | PASS | 70 / 70 |
+| sizdirma_tum_PASS | PASS | 45/45 |
+| imputasyon_medyan_train_den | PASS | maks-diff=2.84e-14 |
+| imputasyon_sayimlari | PASS | bozuk fold=0 |
+| model_veya_scaler_kaydi_yok | PASS | [] |
+| 70_15_15_ciktisi_yok | PASS | [] |
+| karsilastirma_bolumleri | PASS | ['fold', 'fold_ozet', 'genel', 'kaynak'] |
+| A0_OOF_salt_okundu | PASS | sha256=385d795af8ccce7e |
+
+SALT OKUNUR; egitim/CV/70-15-15/model kaydi yapilmadi.

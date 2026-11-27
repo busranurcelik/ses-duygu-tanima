@@ -1,0 +1,13 @@
+kapsam,train_rows,eval_rows,excluded_rows,eval_aug_rows,excluded_orig_rows,group_leak,source_leak,multi_role_source,sonuc
+80_20,18513,1609,3146,0,0,0,0,0,PASS
+70_15_15,17536,2068,3664,0,0,0,0,0,PASS
+fold_1,21156,704,1408,0,0,0,0,0,PASS
+fold_2,21532,640,1096,0,0,0,0,0,PASS
+fold_3,21234,678,1356,0,0,0,0,0,PASS
+fold_4,21436,632,1200,0,0,0,0,0,PASS
+fold_5,21103,759,1406,0,0,0,0,0,PASS
+fold_6,20271,999,1998,0,0,0,0,0,PASS
+fold_7,21393,625,1250,0,0,0,0,0,PASS
+fold_8,20939,643,1686,0,0,0,0,0,PASS
+fold_9,21496,628,1144,0,0,0,0,0,PASS
+fold_10,18852,1472,2944,0,0,0,0,0,PASS

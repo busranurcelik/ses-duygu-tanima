@@ -1,0 +1,2 @@
+script,split_column,input_rows,excluded_dropped,train_rows,val_rows,test_rows,n_features,train_aug_ids,eval_aug_ids,eval_nonorig_rows,group_overlap,source_overlap,test_sources,test_groups,status
+4_ysa_A1_2.py,split_70_15_15,23268,3664,17536,1268,800,192,"noise,noise2,orig,pitch_down,pitch_up,stretch_0.9,stretch_1.1",orig,0,0,0,TESS,TESS_YAF,PASS

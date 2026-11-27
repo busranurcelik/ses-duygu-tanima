@@ -1,0 +1,7 @@
+aug_id,n_cift,orig_f0_mean_ort,aug_f0_mean_ort,ortani_arac,oran_p10,oran_p90,beklenen_oran,beklenen_fark
+noise,7001,219.53288807514798,220.5953043218579,1.0,0.9978390017502341,1.0087067480670588,1.0,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli
+pitch_up,6878,220.54731227727186,231.25630185731916,1.0591817004053596,0.9818759165263569,1.1032191886451992,1.0594630943592953,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli
+pitch_down,100,276.06208463080975,258.02117810442934,0.901672891344904,0.876445177263271,1.0405389989000224,0.8908987181403393,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli
+stretch_0.9,100,276.06208463080975,279.5193297343844,1.0123467892838436,0.9695825191441101,1.0582216676696568,1.0,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli
+stretch_1.1,100,276.06208463080975,274.86052663694073,1.000034435800789,0.9533127289614032,1.0364595569334825,1.0,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli
+noise2,100,276.06208463080975,276.14841474946047,1.000030023261762,0.9833007861390877,1.0180315749778002,1.0,pitch_up ~ +1 semiton; pitch_down ~ -2 semiton; noise/stretch F0'yu degistirmemeli

@@ -1,0 +1,46 @@
+scope,check,result,detail
+global,REVIEW_LABEL dislama,PASS,"2 kayit cikarildi, 7780 canonical"
+global,202 kolon / 192 ozellik,PASS,202 kolon + f0_fallback flag
+global,F0 sentinel dogrulama,PASS,"1606 fallback satiri, 184..190 = 0.0"
+global,fold/split/manifest birebir,PASS,7780 kayit
+fold_1,test aug_id == orig,PASS,"704 satir, 0 aug"
+fold_1,train/test grup ve source kesismesi,PASS,0 / 0
+fold_1,aug satirlari yalnizca train'de,PASS,"train_aug=14080, test_aug=0"
+fold_1,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=19696, train_impute=1460, test_impute=45"
+fold_2,test aug_id == orig,PASS,"640 satir, 0 aug"
+fold_2,train/test grup ve source kesismesi,PASS,0 / 0
+fold_2,aug satirlari yalnizca train'de,PASS,"train_aug=14392, test_aug=0"
+fold_2,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=20142, train_impute=1390, test_impute=72"
+fold_3,test aug_id == orig,PASS,"678 satir, 0 aug"
+fold_3,train/test grup ve source kesismesi,PASS,0 / 0
+fold_3,aug satirlari yalnizca train'de,PASS,"train_aug=14132, test_aug=0"
+fold_3,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=19902, train_impute=1332, test_impute=88"
+fold_4,test aug_id == orig,PASS,"632 satir, 0 aug"
+fold_4,train/test grup ve source kesismesi,PASS,0 / 0
+fold_4,aug satirlari yalnizca train'de,PASS,"train_aug=14288, test_aug=0"
+fold_4,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=20030, train_impute=1406, test_impute=65"
+fold_5,test aug_id == orig,PASS,"759 satir, 0 aug"
+fold_5,train/test grup ve source kesismesi,PASS,0 / 0
+fold_5,aug satirlari yalnizca train'de,PASS,"train_aug=14082, test_aug=0"
+fold_5,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=19682, train_impute=1421, test_impute=68"
+fold_6,test aug_id == orig,PASS,"999 satir, 0 aug"
+fold_6,train/test grup ve source kesismesi,PASS,0 / 0
+fold_6,aug satirlari yalnizca train'de,PASS,"train_aug=13490, test_aug=0"
+fold_6,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=18696, train_impute=1575, test_impute=9"
+fold_7,test aug_id == orig,PASS,"625 satir, 0 aug"
+fold_7,train/test grup ve source kesismesi,PASS,0 / 0
+fold_7,aug satirlari yalnizca train'de,PASS,"train_aug=14238, test_aug=0"
+fold_7,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=19895, train_impute=1498, test_impute=35"
+fold_8,test aug_id == orig,PASS,"643 satir, 0 aug"
+fold_8,train/test grup ve source kesismesi,PASS,0 / 0
+fold_8,aug satirlari yalnizca train'de,PASS,"train_aug=13802, test_aug=0"
+fold_8,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=19513, train_impute=1426, test_impute=62"
+fold_9,test aug_id == orig,PASS,"628 satir, 0 aug"
+fold_9,train/test grup ve source kesismesi,PASS,0 / 0
+fold_9,aug satirlari yalnizca train'de,PASS,"train_aug=14344, test_aug=0"
+fold_9,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=20001, train_impute=1495, test_impute=40"
+fold_10,test aug_id == orig,PASS,"1472 satir, 0 aug"
+fold_10,train/test grup ve source kesismesi,PASS,0 / 0
+fold_10,aug satirlari yalnizca train'de,PASS,"train_aug=12544, test_aug=0"
+fold_10,F0 imputasyon medyani train'den,PASS,"n_train_fallbacksiz=17401, train_impute=1451, test_impute=53"
+OOF,her kayit icin tek tahmin,PASS,"7780 satir, 7780 benzersiz kayit"

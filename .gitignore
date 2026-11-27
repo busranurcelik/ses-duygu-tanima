@@ -25,9 +25,66 @@ data/
 final_oznitelik_seti.csv
 ham_veri_listesi.csv
 
+# v2 group-aware pipeline (raw/large artifacts stay local)
+manifest_v2_local.csv
+final_oznitelik_seti_v2.csv
+sonuclar_v2/modeller/
+sonuclar_v2/kfold_cache/
+/scaler.pkl
+
 # OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
 yedek_eski_kodlar/
+
+# Trained model weights and serialized inference artifacts
+*.keras
+*.joblib
+*.pkl
+*.npz
+
+# Raw, generated and temporary audio
+*.wav
+
+# Local environment variables (in addition to .venv/ above)
+.env
+.env.*
+
+# Logs and files containing personal absolute paths
+*_log.txt
+A1_2/70_15_15/artifact_manifest_A1_2.json
+A1_2/kfold/istatistik_kontrolleri.csv
+A1_2/kfold/istatistik_kontrolleri.md
+A1_2/kfold/istatistiksel_karsilastirma_raporu.md
+
+# Large derived feature tables and record-level lineage/prediction files
+final_oznitelik_seti_v2_dedup.csv
+A1_2/final_oznitelik_seti_A1_2.csv
+A1_1/final_oznitelik_seti_A1_1.csv
+A3/final_oznitelik_seti_A3.csv
+A1_2/augmentation_plani.csv
+sonuclar_v2_dedup/augmentation_plani.csv
+A1_2/f0_istatistikleri.csv
+A1_1/augmentation_plani.csv
+A1_1/kfold/oof_tahminler.csv
+A3/augmentation_plani.csv
+A3/kfold/oof_tahminler.csv
+A3/pencere_secimleri.csv
+manifest_v2*.csv
+A1_2/kfold/oof_tahminler.csv
+A1_2/70_15_15/karsilastirma/*_test_predictions_A1_2.csv
+A1_2/dis_gercek_ses_testi/aday_havuzu.csv
+A1_2/dis_gercek_ses_testi/korunan_dosya_sha256.csv
+A1_2/dis_gercek_ses_testi/secim_durumu.json
+A1_2/dis_gercek_ses_testi/test_manifest.csv
+sonuclar_v2/kfold/oof_tahminler.csv
+sonuclar_v2/karsilastirma/*_test_predictions.csv
+sonuclar_v2/istatistik/eslesmis_tahminler_*.csv
+sonuclar_v2_dedup/kfold/oof_tahminler.csv
+sonuclar_v2_dedup/karsilastirma/*_test_predictions_dedup.csv
+
+# Generated cache/config
+.mplconfig/
+*.mplconfig/

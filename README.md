@@ -33,6 +33,16 @@ Audio is loaded with `librosa.load(..., sr=22050)`, normalized, and cropped or z
 
 The GUI and adapter are original project code and are MIT-licensed. The artifacts they expect are local-only and are **not** distributed by this repository.
 
+## Application Screenshots
+
+### Application Interface
+
+![Application Interface](screenshots/application-interface.png)
+
+### Emotion Prediction Example
+
+![Emotion Prediction Example](screenshots/emotion-prediction-example.png)
+
 ## Model Performance
 
 ### Protocols
@@ -230,7 +240,7 @@ The following are **not** published in this repository:
 - raw WAV datasets, record-level manifests, feature CSVs, temporary audio and local virtual environments;
 - trained RF-B/MLP weights, scaler files and model manifests;
 - old experiment trees such as `A1_1/`, `A3/`, `sonuclar_v2/` and `sonuclar_v2_dedup/`;
-- `screenshots/`, `sonuclar_klasik/`, `sonuclar_istatistik/` and legacy `sonuclar_ysa/` outputs, whose publication status was not approved.
+- `sonuclar_klasik/`, `sonuclar_istatistik/` and legacy `sonuclar_ysa/` outputs, whose publication status was not approved.
 
 The 26 legacy outputs from the clean-base tree are excluded from this release; only aggregate A1.2 results are published.
 

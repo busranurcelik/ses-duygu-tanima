@@ -95,7 +95,17 @@ Bu dosyalar yayın adayında bulunmaz. Ayrıntılar `MODEL_LICENSE_REVIEW.md` ve
 | `.gitignore` | Yapılandırma; MIT kapsamında değil |
 | `README.md` | Proje belgesi; MIT kapsamında değil |
 | `github_lisans_ve_readme_raporu.md` | Denetim raporu; MIT kapsamında değil |
-| `screenshots/arayuz.png`, `screenshots/duygu_tahmini.png` | Görsel onayı yok; yayın izni yok, çıkarılması güvenli |
 | `sonuclar_klasik/`, `sonuclar_istatistik/`, `sonuclar_ysa/` içindeki eski çıktılar | Opsiyonel/koşullu; yayın izni yok, çıkarılması güvenli |
 
 Temiz temelden kalıtılmış 27 yayın dışı dosyadan `README.md` dışındaki 26'sı çalışma ağacından kaldırıldı; Git geçmişi ve HEAD değiştirilmedi. Bunlar yayın manifestine alınmaz.
+
+## 7. Uygulama ekran görüntüleri — MIT dışı, yayın izni verildi
+
+Aşağıdaki iki görsel, proje sahibi `Busra Nur Celik` tarafından kendi uygulaması (`7_final_arayuz.py` ve `arayuz_A1_2_adapter.py`) çalıştırılarak alınmış ekran görüntüleridir. Proje sahibi kendi ürettiği bu görsellerin yayınlanmasına izin vermiştir; eski `screenshots/arayuz.png` ve `screenshots/duygu_tahmini.png` dosyalarına ilişkin “görsel onayı yok / yayın izni yok” kararı bu iki yeni dosya için geçerli değildir.
+
+| Dosya | Lisans ve yayın durumu |
+|---|---|
+| `screenshots/application-interface.png` | Proje sahibinin kendi uygulamasından alınmış ekran görüntüsü; yayın izni **var**; `LICENSE` (MIT) kapsamında **değil** |
+| `screenshots/emotion-prediction-example.png` | Proje sahibinin kendi uygulamasından alınmış ekran görüntüsü; yayın izni **var**; `LICENSE` (MIT) kapsamında **değil** |
+
+`LICENSE` metninin kapsamı yalnızca bölüm 1'de listelenen 24 Python dosyasıdır. Ekran görüntüleri kaynak kod olmadığından bu kapsama **otomatik olarak dahil edilmez** ve 24 dosyalık liste değiştirilmez. Bu onay yalnızca ekran görüntülerinin yayınına ilişkindir; görüntülerde görünebilecek üçüncü taraf veri, model veya kütüphane içerikleri için ayrı bir dağıtım izni verilmez. Model ağırlıkları ve scaler dosyalarının durumu bölüm 5'teki `LICENSE_REVIEW` kararıyla korunur.
